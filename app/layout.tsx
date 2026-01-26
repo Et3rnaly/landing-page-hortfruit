@@ -9,23 +9,15 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Zé das Frutas | Hortifrúti Fresh & Delivery",
   description: "Frutas, verduras e legumes frescos com entrega rápida. Qualidade e naturalidade para sua mesa.",
-  generator: "v0.app",
+  generator: "Samuel Dev",
   icons: {
     icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
       {
         url: "/icon.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/logo.png",
   },
 }
 

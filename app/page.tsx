@@ -1,7 +1,6 @@
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
-import { ProductCategories } from "@/components/product-categories"
-import { HowToOrder } from "@/components/how-to-order"
+import { OrderSection } from "@/components/order-section"
 import { DeliveryInfo } from "@/components/delivery-info"
 import { Location } from "@/components/location"
 import { Footer } from "@/components/footer"
@@ -11,8 +10,7 @@ export default function HomePage() {
     <main className="min-h-screen">
       <Hero />
       <Features />
-      <ProductCategories />
-      <HowToOrder />
+      <OrderSection />
       <DeliveryInfo />
       <Location />
       <Footer />

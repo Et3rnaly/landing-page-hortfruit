@@ -3,7 +3,7 @@ import { ShoppingBag, MapPin, MessageSquare } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/30">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/30">
       <div className="absolute inset-0 -z-10">
         <img
           src="/fresh-colorful-fruits-and-vegetables-on-clean-whit.jpg"
@@ -12,25 +12,25 @@ export function Hero() {
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm text-primary">
             <MapPin className="h-4 w-4" />
             <span className="font-medium">Entrega rápida em toda região</span>
           </div>
 
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-3 sm:gap-4">
             <img
               src="/logo.png"
               alt="Zé das Frutas Logo"
-              className="h-24 w-24 sm:h-32 sm:w-32 lg:h-40 lg:w-40 drop-shadow-2xl"
+              className="h-20 w-20 sm:h-28 sm:w-28 lg:h-36 lg:w-36 drop-shadow-2xl"
             />
-            <h1 className="text-balance text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+            <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Zé das Frutas
             </h1>
           </div>
 
-          <p className="text-balance mx-auto max-w-2xl text-xl leading-relaxed text-muted-foreground sm:text-2xl">
+          <p className="text-balance mx-auto max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
             Frutas, verduras e legumes frescos, direto do produtor para sua mesa. Qualidade e sabor em cada entrega.
           </p>
 
@@ -63,8 +63,11 @@ export function Hero() {
               size="lg"
               variant="outline"
               className="w-full sm:w-auto text-base px-8 py-6 rounded-full border-2 bg-transparent transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-primary-foreground hover:border-primary cursor-pointer"
+              asChild
             >
-              Ver Catálogo
+              <a href="#catalogo">
+                Ver Catálogo
+              </a>
             </Button>
           </div>
         </div>
